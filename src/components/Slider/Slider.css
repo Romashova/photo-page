@@ -1,0 +1,28 @@
+.slider {
+    position: static;
+    width: 300px;
+    margin: auto;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.slider-img {
+    position: static;
+    width: 200px;
+    transition: all 6s;
+    transition-timing-function: linear;
+}
+
+.slider-img-prev {
+    transform: translateX(-100%);
+}
+
+.slider-img-next {
+    transform: translateX(100%);
+}
+
+.img{
+    width: 400px;
+}

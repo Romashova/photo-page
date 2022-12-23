@@ -1,0 +1,11 @@
+
+.ImgGirls{
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    /* Два ряда */
+    grid-template-rows: auto auto;
+    /* Автоматическое размещение в ряд */
+    grid-auto-flow: row;
+    grid-gap: 10px;
+  }
