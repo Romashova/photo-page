@@ -1,5 +1,4 @@
 import ImgReportage from "../pictures/ImgReportage"
-import './Img.css';
 
 export const Reportage = () => {
     return (

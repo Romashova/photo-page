@@ -18,6 +18,13 @@ import { Pets } from './routes/pets';
 import { Reportage } from './routes/reportage';
 import { Slider } from './components/Slider'
 
+import Likes from './components/Likes';
+
+const styles = {
+  fontFamily: 'sans-serif',
+  textAlign: 'center',
+};
+
 // import * as React from 'react';
 // import ImageList from '@mui/material/ImageList';
 // import ImageListItem from '@mui/material/ImageListItem';
@@ -58,7 +65,9 @@ function Home() {
         <p><b>I'm shooting a world full of unrelate elements.</b></p>
         <p><i>Object. Composition. Moment. Light. Emotion.</i></p>
         <Slider/>
-
+        <div style={styles}>
+          <Likes />
+        </div>
         </div>
     );
 }
