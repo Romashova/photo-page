@@ -21,14 +21,9 @@ import { Slider } from './components/Slider'
 import Likes from './components/Likes';
 
 const styles = {
-  fontFamily: 'sans-serif',
-  textAlign: 'center',
+    fontFamily: 'sans-serif',
+    textAlign: 'center',
 };
-
-// import * as React from 'react';
-// import ImageList from '@mui/material/ImageList';
-// import ImageListItem from '@mui/material/ImageListItem';
-
 
 function App() {
     return (
@@ -39,19 +34,24 @@ function App() {
                     Welcome to my page
                 </p>
             </header>
-            <div className='main-content-container'>
-                <Sidebar className="sidebar-container"/>
-                <Routes className="routes-container">
-                    <Route index element={<Home />} />
-                    <Route path="/family" element={<Family />} />
-                    <Route path="/girls" element={<Girls />} />
-                    <Route path="/kids" element={<Kids />} />
-                    <Route path="/love" element={<Love />} />
-                    <Route path="/media" element={<Media />} />
-                    <Route path="/pets" element={<Pets />} />
-                    <Route path="/reportage" element={<Reportage />} />
-                </Routes>
-            </div>
+            <main className='main-container'>
+                <Sidebar className="sidebar-container" />
+                <body>
+                    <div className='main-content-container'>
+
+                        <Routes className="routes-container">
+                            <Route index element={<Home />} />
+                            <Route path="/family" element={<Family />} />
+                            <Route path="/girls" element={<Girls />} />
+                            <Route path="/kids" element={<Kids />} />
+                            <Route path="/love" element={<Love />} />
+                            <Route path="/media" element={<Media />} />
+                            <Route path="/pets" element={<Pets />} />
+                            <Route path="/reportage" element={<Reportage />} />
+                        </Routes>
+                    </div>
+                </body>
+            </main>
             <SocialMedia />
         </div>
     );
@@ -61,13 +61,13 @@ function Home() {
     return (
 
         <div className="main">
-        <p>I believe that you will like me</p>
-        <p><b>I'm shooting a world full of unrelate elements.</b></p>
-        <p><i>Object. Composition. Moment. Light. Emotion.</i></p>
-        <Slider/>
-        <div style={styles}>
-          <Likes />
-        </div>
+            <p>I believe that you will like me</p>
+            <p><b>I'm shooting a world full of unrelate elements.</b></p>
+            <p><i>Object. Composition. Moment. Light. Emotion.</i></p>
+            <Slider />
+            <div style={styles}>
+                <Likes />
+            </div>
         </div>
     );
 }

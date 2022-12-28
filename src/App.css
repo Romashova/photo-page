@@ -7,6 +7,15 @@ body {
 
 .App {
   text-align: center;
+  /* display: grid;
+  grid-template-areas:
+  "header header"
+  "sidebar main"
+  "footer footer";
+  grid-template-rows: 360px 1fr 100 px; */
+  display: flex;
+  flex-direction: column;
+
 }
 
 .App-logo {
@@ -47,7 +56,7 @@ body {
   }
 }
 
-.main-content-container {
+.main-container {
   display: flex;
 }
 

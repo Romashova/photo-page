@@ -1,10 +1,11 @@
 import ImgGirls from "../pictures/ImgGirls"
-import Likes from '../components/Likes';
+import {ImageItem} from "../components/ImageItem/ImageItem";
+import "./style.css"
 
 export const Girls = () => {
     return (
-        <div >
-            {ImgGirls.map(imgSrc => (<><img key={imgSrc} src={imgSrc} height="300" alt='GIRLS'/><Likes /></>))}
+        <div className="image-list">
+            {ImgGirls.map(imgSrc => (<ImageItem imgSrc={imgSrc} alt={"Girls"}/>))}
         </div>
     );
 }
