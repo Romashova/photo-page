@@ -1,9 +1,11 @@
 import ImgReportage from "../pictures/ImgReportage"
+import {ImageItem} from "../components/ImageItem/ImageItem";
+import "./style.css"
 
 export const Reportage = () => {
     return (
-        <div className="Img">
-            {ImgReportage.map(imgSrc => (<img key={imgSrc} src={imgSrc} height="300" alt='Reportage'/>))}
+        <div className="image-list">
+            {ImgReportage.map(imgSrc => (<ImageItem imgSrc={imgSrc} alt={"Pets"}/>))}
         </div>
     );
 }

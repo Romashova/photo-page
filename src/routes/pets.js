@@ -1,9 +1,11 @@
 import ImgPets from "../pictures/ImgPets"
+import {ImageItem} from "../components/ImageItem/ImageItem";
+import "./style.css"
 
 export const Pets = () => {
     return (
-        <div>
-            {ImgPets.map(imgSrc => (<img key={imgSrc} src={imgSrc} height="300" alt='Pets'/>))}
+        <div className="image-list">
+            {ImgPets.map(imgSrc => (<ImageItem imgSrc={imgSrc} alt={"Pets"}/>))}
         </div>
     );
 }

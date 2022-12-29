@@ -34,11 +34,9 @@ function App() {
                     Welcome to my page
                 </p>
             </header>
+            <Sidebar className="sidebar-container" />
             <main className='main-container'>
-                <Sidebar className="sidebar-container" />
-                <body>
                     <div className='main-content-container'>
-
                         <Routes className="routes-container">
                             <Route index element={<Home />} />
                             <Route path="/family" element={<Family />} />
@@ -50,7 +48,7 @@ function App() {
                             <Route path="/reportage" element={<Reportage />} />
                         </Routes>
                     </div>
-                </body>
+    
             </main>
             <SocialMedia />
         </div>

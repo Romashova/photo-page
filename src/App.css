@@ -7,12 +7,12 @@ body {
 
 .App {
   text-align: center;
-  /* display: grid;
+  display: grid;
   grid-template-areas:
   "header header"
   "sidebar main"
   "footer footer";
-  grid-template-rows: 360px 1fr 100 px; */
+  grid-template-rows: 360px 1fr 100 px; 
   display: flex;
   flex-direction: column;
 
@@ -57,7 +57,9 @@ body {
 }
 
 .main-container {
-  display: flex;
+  grid-area: main;
+  background-color: var(--main-background);
+  padding: 20px;
 }
 
 .routes-container{
@@ -69,7 +71,7 @@ body {
 }
 
 .main {
-  grid-area: main;
+  display: flex;
   background-color: var(--main-background);
   padding: 30px;
   text-align: center;

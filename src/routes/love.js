@@ -1,9 +1,11 @@
 import ImgLove from "../pictures/ImgLove"
+import {ImageItem} from "../components/ImageItem/ImageItem";
+import "./style.css"
 
 export const Love = () => {
     return (
-        <div>
-            {ImgLove.map(imgSrc => (<img key={imgSrc} src={imgSrc} height="300" alt='LoveStory'/>))}
+        <div className="image-list">
+            {ImgLove.map(imgSrc => (<ImageItem imgSrc={imgSrc} alt={"LoveStory"}/>))}
         </div>
     );
 }
