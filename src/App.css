@@ -12,7 +12,7 @@ body {
   "header header"
   "sidebar main"
   "footer footer";
-  grid-template-rows: 360px 1fr 100 px; 
+  grid-template-rows: 360px 1fr 100 px;
   display: flex;
   flex-direction: column;
 
@@ -56,7 +56,7 @@ body {
   }
 }
 
-.main-container {
+.main-content-container {
   grid-area: main;
   background-color: var(--main-background);
   padding: 20px;
@@ -70,8 +70,8 @@ body {
   width: 65%;
 }
 
-.main {
-  display: flex;
+.main-container {
+  grid-area: main;
   background-color: var(--main-background);
   padding: 30px;
   text-align: center;

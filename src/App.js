@@ -48,7 +48,7 @@ function App() {
                             <Route path="/reportage" element={<Reportage />} />
                         </Routes>
                     </div>
-    
+
             </main>
             <SocialMedia />
         </div>
