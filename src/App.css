@@ -1,5 +1,4 @@
 body {
-  display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #e0e4cc;
@@ -12,16 +11,15 @@ body {
   "header header"
   "sidebar main"
   "footer footer";
-  grid-template-rows: 360px 1fr 100 px;
-  display: flex;
-  flex-direction: column;
-
-}
+  grid-template-columns: 20% auto;
+  grid-template-rows: 358px auto 55px;
+  }
 
 .App-logo {
-  margin-top: 100px;
+  margin: 30px;
   height: 10vmin;
   pointer-events: none;
+
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -30,11 +28,15 @@ body {
   }
 }
 
-.App-header {
-  background-color: #e0e4cc;
-  min-height: 40vh;
+.logo-dir{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+}
+
+.App-header {
+
+  background-color: #e0e4cc;
+  min-height: 10vh;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
@@ -42,7 +44,7 @@ body {
 }
 
 .App-name {
-  margin-top: 120px;
+  margin-top: 30px;
   color: #94604b;
 }
 

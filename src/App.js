@@ -4,9 +4,10 @@ import {
 } from 'react-router-dom';
 
 import { Sidebar } from './components/Sidebar';
-import { SocialMedia } from './components/SocialMedia';
+import { Footer } from './components/Footer';
 
 import logo from './logo.png';
+import logoName from './logo_name.png';
 import './App.css';
 
 import { Family } from './routes/family';
@@ -29,10 +30,14 @@ function App() {
     return (
         <div className="App">
             <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
+            <div className='logo-dir'>
+            <img src={logo} className="App-logo" alt="logo" />
+                <img src={logoName} />
+            </div>
+
                 <p className="App-name">
                     Welcome to my page
-                </p>
+                                    </p>
             </header>
             <Sidebar className="sidebar-container" />
             <main className='main-container'>
@@ -50,7 +55,7 @@ function App() {
                     </div>
 
             </main>
-            <SocialMedia />
+            <Footer/>
         </div>
     );
 }
