@@ -1,4 +1,5 @@
 .image-item{
     grid-area: main;
     margin: 5px;
+    position: relative;
 }

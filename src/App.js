@@ -21,10 +21,7 @@ import { Slider } from './components/Slider'
 
 import Likes from './components/Likes';
 
-const styles = {
-    fontFamily: 'sans-serif',
-    textAlign: 'center',
-};
+
 
 function App() {
     return (
@@ -68,7 +65,7 @@ function Home() {
             <p><b>I'm shooting a world full of unrelate elements.</b></p>
             <p><i>Object. Composition. Moment. Light. Emotion.</i></p>
             <Slider />
-            <div style={styles}>
+            <div className="likes-wrapper">
                 <Likes />
             </div>
         </div>
