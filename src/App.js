@@ -20,8 +20,7 @@ import { Reportage } from './routes/reportage';
 import { Slider } from './components/Slider'
 
 import Likes from './components/Likes';
-
-
+import ImgFront from './assets/images/GIRLS/STUDIO/45.jpg';
 
 function App() {
     return (
@@ -64,11 +63,10 @@ function Home() {
             <p>I believe that you will like me</p>
             <p><b>I'm shooting a world full of unrelate elements.</b></p>
             <p><i>Object. Composition. Moment. Light. Emotion.</i></p>
-            <Slider />
-            <div className="likes-wrapper">
-                <Likes />
-            </div>
+            <img src={ImgFront} height="300"/>
+
         </div>
+
     );
 }
 

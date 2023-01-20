@@ -1,13 +1,14 @@
 import React from 'react';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import FavoriteIcon from '@mui/icons-material/Favorite';
 import "./Likes.css";
 
 class Likes extends React.Component {
 
-  constructor(props){
+  constructor(props) {
 
     super(props);
-    this.state ={
+    this.state = {
       likes: parseInt(localStorage.getItem(`${this.props.imgSrc}`)) || 0,
       updated: false
     }
@@ -16,8 +17,8 @@ class Likes extends React.Component {
 
   updateLikes() {
 
-    if(!this.state.updated) {
-      this.setState((prevState, props) => {
+    if (!this.state.updated) {
+      this.setState((prevState) => {
         localStorage.setItem(`${this.props.imgSrc}`, (prevState.likes + 1).toString())
         return {
           likes: prevState.likes + 1,
@@ -26,7 +27,7 @@ class Likes extends React.Component {
       });
     } else {
 
-      this.setState((prevState, props) => {
+      this.setState((prevState) => {
         localStorage.setItem(`${this.props.imgSrc}`, (prevState.likes - 1).toString())
         return {
           likes: prevState.likes - 1,
@@ -38,11 +39,11 @@ class Likes extends React.Component {
 
   }
 
-  render(){
+  render() {
 
-    return(
+    return (
       <div className='likes-wrapper'>
-        <p onClick={this.updateLikes}><FavoriteBorderIcon/>{this.state.likes}</p>
+        <p onClick={this.updateLikes}><FavoriteBorderIcon />{this.state.likes}</p>
       </div>
     );
 
