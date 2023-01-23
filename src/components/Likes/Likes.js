@@ -43,7 +43,8 @@ class Likes extends React.Component {
 
     return (
       <div className='likes-wrapper'>
-        <p onClick={this.updateLikes}><FavoriteBorderIcon />{this.state.likes}</p>
+        <p onClick={this.updateLikes}>{this.state.likes===0?<FavoriteBorderIcon />:<FavoriteIcon/>}{this.state.likes}</p>
+
       </div>
     );
 

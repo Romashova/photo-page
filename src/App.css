@@ -79,3 +79,13 @@ body {
   text-align: center;
 }
 
+.slider-wrapper{
+  margin: auto;
+  width: 600px;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

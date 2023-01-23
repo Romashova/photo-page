@@ -19,8 +19,6 @@ import { Pets } from './routes/pets';
 import { Reportage } from './routes/reportage';
 import { Slider } from './components/Slider'
 
-import Likes from './components/Likes';
-import ImgFront from './assets/images/GIRLS/STUDIO/45.jpg';
 
 function App() {
     return (
@@ -60,10 +58,10 @@ function Home() {
     return (
 
         <div className="main">
-            <p>I believe that you will like me</p>
+            <p>I believe that you will like</p>
             <p><b>I'm shooting a world full of unrelate elements.</b></p>
             <p><i>Object. Composition. Moment. Light. Emotion.</i></p>
-            <img src={ImgFront} height="300"/>
+            <div className='slider-wrapper'><Slider/></div>
 
         </div>
 
