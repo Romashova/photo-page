@@ -6,7 +6,7 @@ import {
 import { Sidebar } from './components/Sidebar';
 import { Footer } from './components/Footer';
 
-import logo from './logo.png';
+import logo from './logo.svg';
 import logoName from './logo_name.png';
 import './App.css';
 
@@ -26,7 +26,7 @@ function App() {
             <header className="App-header">
             <div className='logo-dir'>
             <img src={logo} className="App-logo" alt="logo" />
-                <img src={logoName} />
+                <img className='logo-name' src={logoName} />
             </div>
 
                 <p className="App-name">
@@ -58,12 +58,12 @@ function Home() {
     return (
 
         <div className="main">
-            <p>I believe that you will like</p>
+            <div className='text-container'><p>I believe that you will like</p>
             <p><b>I'm shooting a world full of unrelate elements.</b></p>
-            <p><i>Object. Composition. Moment. Light. Emotion.</i></p>
+            <p><i>Object. Composition. Moment. Light. Emotion.</i></p></div>
             <div className='slider-wrapper'><Slider/></div>
-
         </div>
+
 
     );
 }

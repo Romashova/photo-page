@@ -1,7 +1,17 @@
 body {
   flex-direction: column;
   align-items: center;
-  background-color: #e0e4cc;
+  background-color: rgb(225, 229, 205);
+  background-image: linear-gradient(
+    to bottom,
+    rgba(225, 229, 205),
+    rgba(225, 229, 205, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ), url("./backgroundFoto.JPG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .App {
@@ -12,7 +22,7 @@ body {
   "sidebar main"
   "footer footer";
   grid-template-columns: 20% auto;
-  grid-template-rows: 358px auto 55px;
+  grid-template-rows: auto ;
   }
 
 .App-logo {
@@ -34,18 +44,16 @@ body {
 }
 
 .App-header {
-
-  background-color: #e0e4cc;
-  min-height: 10vh;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 25px;
+  width: 300px;
 }
 
 .App-name {
   margin-top: 30px;
-  color: #94604b;
+  color: rgba(148, 96, 75, 0.5);
+  padding-left: 10px;
 }
 
 @keyframes App-logo-spin {
@@ -56,6 +64,10 @@ body {
   to {
     transform: rotate(360deg);
   }
+}
+
+.logo-name{
+  opacity: 0.2;
 }
 
 .main-content-container {
@@ -88,4 +100,10 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+}
+.text-container{
+  width: 400px;
+  background-color: rgba(225, 229, 205, 0.2);
+  margin: auto;
 }

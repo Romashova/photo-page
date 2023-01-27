@@ -38,6 +38,6 @@
 
 .link.isActive {
     position: relative;
-    right: -10px;
+    right: -2px;
     color: rgba(0, 82, 85, 0.726);
 }

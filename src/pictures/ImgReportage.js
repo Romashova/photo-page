@@ -13,6 +13,6 @@ import imgR12 from "../assets/images/REPORTAGE/12.jpg"
 import imgR13 from "../assets/images/REPORTAGE/13.jpg"
 import imgR14 from "../assets/images/REPORTAGE/14.jpg"
 
-const imgReportage=[imgR1, imgR2, imgR3, imgR4, imgR5, imgR6, imgR7, imgR8, imgR9, imgR10, imgR11, imgR12, imgR13, imgR14]
+const imgReportage=[imgR7, imgR8, imgR9, imgR10, imgR11, imgR12, imgR13, imgR1, imgR2, imgR3, imgR4, imgR5, imgR6, imgR14]
 
 export default imgReportage
