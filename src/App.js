@@ -5,9 +5,8 @@ import {
 
 import { Sidebar } from './components/Sidebar';
 import { Footer } from './components/Footer';
+import { Header } from './components/Header';
 
-import logo from './logo.svg';
-import logoName from './logo_name.png';
 import './App.css';
 
 import { Family } from './routes/family';
@@ -24,16 +23,7 @@ function App() {
     return (
 
         <div className="App">
-            <header className="App-header">
-            <div className='logo-dir'>
-            <img src={logo} className="App-logo" alt="logo" />
-                <img className='logo-name' src={logoName} />
-            </div>
-
-                <p className="App-name">
-                    Welcome to my page
-                                    </p>
-            </header>
+            <Header className="App-header"></Header>
             <Sidebar className="sidebar-container" />
             <main className='main-container'>
                     <div className='main-content-container'>
