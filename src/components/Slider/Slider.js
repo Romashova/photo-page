@@ -21,7 +21,7 @@ export const Slider = () =>{
 
         <Fade>
           <div className="each-fade">
-            <img src={img4} height="600"/>
+            <img src={img41} height="600"/>
           </div>
           <div className="each-fade">
             <img src={img9} height="600"/>
@@ -33,7 +33,7 @@ export const Slider = () =>{
             <img src={img27} height="600"/>
           </div>
           <div className="each-fade">
-            <img src={img41} height="600"/>
+            <img src={img4} height="600"/>
           </div>
           <div className="each-fade">
             <img src={img47} height="600"/>
